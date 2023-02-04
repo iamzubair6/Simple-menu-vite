@@ -1,7 +1,6 @@
 import React from "react";
 import ContactBg from "../../Assets/images/banner.jpg";
 import { Box, Container, Typography } from "@mui/material";
-
 export default function Header() {
   return (
     <Box
@@ -18,66 +17,24 @@ export default function Header() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Box>
         <Typography
+          variant="h1"
           sx={{
-            typography: { xs: "h3", sm: "h3", md: "h2", lg: "h1" },
+            // typography: { xs: "h3", sm: "h3", md: "h2", lg: "h1" },
+            fontFamily: "Lobster Two",
+            // fontStyle: "cursive",
+            fontWeight: 600,
+            fontSize: "72px",
+            lineHeight: "86px",
           }}
           color={"white"}
         >
-          The
-        </Typography>
-        <Typography
-          sx={{ typography: { xs: "h3", sm: "h3", md: "h2", lg: "h1" } }}
-          color={"white"}
-        >
-          Down
-        </Typography>
-        <Typography
-          sx={{ typography: { xs: "h3", sm: "h3", md: "h2", lg: "h1" } }}
-          color={"white"}
-        >
-          Town
-        </Typography>
-      </Box>
-      <Box>
-        <Typography
-          textAlign="end"
-          sx={{ typography: { xs: "h3", sm: "h3", md: "h2", lg: "h2" } }}
-          color={"white"}
-        >
-          Taste The Beast
-        </Typography>
-        <Typography
-          textAlign="end"
-          sx={{ typography: { xs: "h4", sm: "h4", md: "h4", lg: "h3" } }}
-          color={"white"}
-        >
-          Best
-        </Typography>
-        <Typography
-          textAlign="end"
-          sx={{ typography: { xs: "h4", sm: "h4", md: "h4", lg: "h3" } }}
-          color={"white"}
-        >
-          Budget
-        </Typography>
-        <Typography
-          textAlign="end"
-          sx={{ typography: { xs: "h4", sm: "h4", md: "h4", lg: "h3" } }}
-          color={"white"}
-        >
-          Burgers
-        </Typography>
-        <Typography
-          textAlign="end"
-          sx={{ typography: { xs: "h4", sm: "h4", md: "h4", lg: "h3" } }}
-          color={"white"}
-        >
-          In Cloud History
+          DownTown
         </Typography>
       </Box>
     </Box>

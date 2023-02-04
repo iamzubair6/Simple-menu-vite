@@ -1414,6 +1414,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/lobster-two@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/lobster-two/-/lobster-two-4.5.10.tgz#b3733d33580e8a5b525e8773b804a281b485d8b6"
+  integrity sha512-HtKLdMcOsocoj6ERtoNxM8MaPe9TgpYyQA9KmqKY+vkVmrTbzmS8jV9oUJP/VGNPvwli5ai9xSfxzcFA8hbTXA==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"

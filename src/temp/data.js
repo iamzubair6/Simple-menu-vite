@@ -24,13 +24,13 @@ export const foodData = [
         description: "This Regular Chicken Burger consists of a tasty, delicious succulent chicken Pattie, dressed with freshly baked sesame seed bun, mayo and shredded lettuce. It seems simple, but guaranteed you a mouth-watering feel on your first bite.",
     },
     {
-        img: image3,
+        img: image4,
         titel: "Beef Cheese Burger 310tk",
         item1: "Call for Order",
         description: "This Cheese Burger is loaded with tender & juicy Beef Pattie, dressed with freshly baked sesame seed bun, mayo and shredded lettuce & freshly Sliced Tomato and an absolute slice of lightly salted cheese slice. It feels Creamy on your first beefy bite.",
     },
     {
-        img: image4,
+        img: image3,
         titel: "Chicken Cheese Burger 255tk",
         item1: "Call for Order",
         description: "This Burger consists of tasty, delicious succulent chicken Pattie, dressed with freshly baked sesame seed bun, mayo and shredded lettuce and an absolute slice of lightly salted cheese slice. It guaranteed you a creamy feel on your first bite.",

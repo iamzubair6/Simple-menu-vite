@@ -3,11 +3,19 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box, Button, Grid, Link } from "@mui/material";
+import { Box, Button, Grid, Link, Modal, Popper, styled } from "@mui/material";
 import { foodData } from "../../temp/data";
-import { Title } from "@mui/icons-material";
-
 const BlogContent = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popper" : undefined;
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [seeMore, setSeeMore] = useState({});
   const toggleBtn = (key) => {
     setSeeMore((prevState) =>
@@ -59,9 +67,17 @@ const BlogContent = () => {
               >
                 <Typography
                   color="textHeading"
-                  variant="h5"
+                  variant={"h5"}
                   component="div"
-                  sx={{ textAlign: "center" }}
+                  sx={{
+                    textAlign: "center",
+                    fontSize: {
+                      xs: "16px",
+                      sm: "16px",
+                      md: "18px",
+                      lg: "24px",
+                    },
+                  }}
                 >
                   {titel}
                 </Typography>
@@ -72,8 +88,9 @@ const BlogContent = () => {
                     textAlign: "center",
                     flexDirection: {
                       xs: "column",
-                      sm: "row",
+                      sm: "column",
                       md: "row",
+                      lg: "row",
                       xl: "row",
                     },
                     gap: "10px",
@@ -86,7 +103,13 @@ const BlogContent = () => {
                     variant="pBoldSmall"
                     sx={{
                       bgcolor: "rgba(0, 207, 232, 0.12)",
-
+                      display: {
+                        xs: "block",
+                        sm: "block",
+                        md: "block",
+                        lg: "none",
+                        xl: "none",
+                      },
                       color: "#00CFE8",
                       borderRadius: "17px",
                       px: "9px",
@@ -100,6 +123,51 @@ const BlogContent = () => {
                   >
                     {item1}
                   </Link>
+                  <Box
+                    sx={{
+                      display: {
+                        xs: "none",
+                        sm: "none",
+                        md: "none",
+                        lg: "block",
+                        xl: "block",
+                      },
+                    }}
+                  >
+                    <Typography
+                      variant="pBoldSmall"
+                      aria-describedby={id}
+                      onClick={handleClick}
+                      sx={{
+                        bgcolor: "rgba(0, 207, 232, 0.12)",
+                        cursor: "pointer",
+                        color: "#00CFE8",
+                        borderRadius: "17px",
+                        px: "9px",
+                        py: "4px",
+                        fontSize: {
+                          xs: "10px",
+                          sm: "12px",
+                          md: "15px",
+                          lg: "16px",
+                        },
+                      }}
+                    >
+                      Call for Order
+                    </Typography>
+                    <Popper id={id} open={open} anchorEl={anchorEl}>
+                      <Box
+                        sx={{
+                          border: 1,
+                          p: 1,
+                          bgcolor: "background.paper",
+                          mt: "10px",
+                        }}
+                      >
+                        +8801850131773
+                      </Box>
+                    </Popper>
+                  </Box>
                   <Typography
                     variant="pBoldSmall"
                     sx={{
@@ -107,7 +175,12 @@ const BlogContent = () => {
                       color: "#7367F0",
                       borderRadius: "17px",
                       px: "9px",
-                      fontSize: { xs: "10px" },
+                      fontSize: {
+                        xs: "10px",
+                        sm: "12px",
+                        md: "15px",
+                        lg: "16px",
+                      },
                     }}
                   >
                     Buy 1 get 1
