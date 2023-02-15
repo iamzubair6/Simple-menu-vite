@@ -168,23 +168,25 @@ const BlogContent = () => {
                       </Box>
                     </Popper>
                   </Box>
-                  <Typography
-                    variant="pBoldSmall"
-                    sx={{
-                      bgcolor: "rgba(115, 103, 240, 0.12)",
-                      color: "#7367F0",
-                      borderRadius: "17px",
-                      px: "9px",
-                      fontSize: {
-                        xs: "10px",
-                        sm: "12px",
-                        md: "15px",
-                        lg: "16px",
-                      },
-                    }}
-                  >
-                    Buy 1 get 1
-                  </Typography>
+                  {Boolean(idx <= 6) ? (
+                    <Typography
+                      variant="pBoldSmall"
+                      sx={{
+                        bgcolor: "rgba(115, 103, 240, 0.12)",
+                        color: "#7367F0",
+                        borderRadius: "17px",
+                        px: "9px",
+                        fontSize: {
+                          xs: "10px",
+                          sm: "12px",
+                          md: "15px",
+                          lg: "16px",
+                        },
+                      }}
+                    >
+                      Buy 1 get 1
+                    </Typography>
+                  ) : null}
                 </Box>
                 <Typography
                   variant="pRegularSmall"

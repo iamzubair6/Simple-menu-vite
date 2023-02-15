@@ -1,5 +1,5 @@
 import React from "react";
-import ContactBg from "../../Assets/images/banner.jpg";
+import ContactBg from "../../Assets/images/banner.png";
 import { Box, Container, Typography } from "@mui/material";
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
         alignItems: "center",
       }}
     >
-      <Box>
+      {/* <Box>
         <Typography
           variant="h1"
           sx={{
@@ -36,7 +36,7 @@ export default function Header() {
         >
           DownTown
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
