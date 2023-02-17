@@ -99,7 +99,7 @@ const BlogContent = () => {
                 >
                   <Link
                     underline="none"
-                    href="tel: +8801850131773"
+                    href="tel: +8801327422482"
                     variant="pBoldSmall"
                     sx={{
                       bgcolor: "rgba(0, 207, 232, 0.12)",
@@ -164,7 +164,7 @@ const BlogContent = () => {
                           mt: "10px",
                         }}
                       >
-                        +8801850131773
+                        +8801327422482
                       </Box>
                     </Popper>
                   </Box>

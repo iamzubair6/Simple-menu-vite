@@ -3,6 +3,10 @@
     "file": "assets/hamburger-50e94e6a.png",
     "src": "public/hamburger.png"
   },
+  "src/Assets/images/banner.png": {
+    "file": "assets/banner-02f8bd90.png",
+    "src": "src/Assets/images/banner.png"
+  },
   "node_modules/@fontsource/lobster-two/files/lobster-two-latin-400-normal.woff2": {
     "file": "assets/lobster-two-latin-400-normal-b8451fa5.woff2",
     "src": "node_modules/@fontsource/lobster-two/files/lobster-two-latin-400-normal.woff2"
@@ -10,10 +14,6 @@
   "node_modules/@fontsource/lobster-two/files/lobster-two-all-400-normal.woff": {
     "file": "assets/lobster-two-all-400-normal-256ca9bd.woff",
     "src": "node_modules/@fontsource/lobster-two/files/lobster-two-all-400-normal.woff"
-  },
-  "src/Assets/images/banner.jpg": {
-    "file": "assets/banner-2b9fca2e.jpg",
-    "src": "src/Assets/images/banner.jpg"
   },
   "src/Assets/images/beef.png": {
     "file": "assets/beef-720136d6.png",
@@ -39,10 +39,6 @@
     "file": "assets/Chicken DD-ecab64df.png",
     "src": "src/Assets/images/Chicken DD.png"
   },
-  "src/Assets/images/crispy-chicken-burger.jpg": {
-    "file": "assets/crispy-chicken-burger-bd786888.jpg",
-    "src": "src/Assets/images/crispy-chicken-burger.jpg"
-  },
   "src/Assets/images/ChickenWrap.jpg": {
     "file": "assets/ChickenWrap-b536d3df.jpg",
     "src": "src/Assets/images/ChickenWrap.jpg"
@@ -50,6 +46,10 @@
   "src/Assets/images/BeefWrap.jpg": {
     "file": "assets/BeefWrap-7cf1144b.jpg",
     "src": "src/Assets/images/BeefWrap.jpg"
+  },
+  "src/Assets/images/crispy-chicken-burger.jpg": {
+    "file": "assets/crispy-chicken-burger-bd786888.jpg",
+    "src": "src/Assets/images/crispy-chicken-burger.jpg"
   },
   "src/Assets/images/strips.jpg": {
     "file": "assets/strips-9ac86fa1.jpg",
@@ -68,14 +68,14 @@
     "src": "index.css"
   },
   "index.html": {
-    "file": "assets/index-de260bbf.js",
+    "file": "assets/index-f9ee7f39.js",
     "src": "index.html",
     "isEntry": true,
     "css": [
       "assets/index-225f5ef0.css"
     ],
     "assets": [
-      "assets/banner-2b9fca2e.jpg",
+      "assets/banner-02f8bd90.png",
       "assets/beef-720136d6.png",
       "assets/Chicken-e7e967f7.png",
       "assets/Chicken C-a7fdb3fc.png",
